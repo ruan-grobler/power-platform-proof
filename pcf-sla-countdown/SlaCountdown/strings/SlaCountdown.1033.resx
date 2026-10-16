@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="SlaCountdown_Display_Key" xml:space="preserve">
+    <value>SLA Countdown Badge</value>
+  </data>
+  <data name="SlaCountdown_Desc_Key" xml:space="preserve">
+    <value>Shows the time left before a due date as a colour-coded badge: on track, warning, critical or overdue.</value>
+  </data>
+  <data name="dueDate_Display_Key" xml:space="preserve">
+    <value>Due date</value>
+  </data>
+  <data name="dueDate_Desc_Key" xml:space="preserve">
+    <value>The date and time column the SLA is measured against.</value>
+  </data>
+  <data name="warningHours_Display_Key" xml:space="preserve">
+    <value>Warning threshold (hours)</value>
+  </data>
+  <data name="warningHours_Desc_Key" xml:space="preserve">
+    <value>The badge turns amber when this many hours or fewer remain. Default 24.</value>
+  </data>
+  <data name="criticalHours_Display_Key" xml:space="preserve">
+    <value>Critical threshold (hours)</value>
+  </data>
+  <data name="criticalHours_Desc_Key" xml:space="preserve">
+    <value>The badge turns red when this many hours or fewer remain. Default 4.</value>
+  </data>
+  <data name="label_Display_Key" xml:space="preserve">
+    <value>Label</value>
+  </data>
+  <data name="label_Desc_Key" xml:space="preserve">
+    <value>Optional text shown before the countdown, for example "Approval SLA".</value>
+  </data>
+</root>

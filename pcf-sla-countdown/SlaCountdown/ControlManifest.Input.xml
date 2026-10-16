@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<manifest>
+  <control namespace="RuanGrobler" constructor="SlaCountdown" version="1.0.0" display-name-key="SlaCountdown_Display_Key" description-key="SlaCountdown_Desc_Key" control-type="standard">
+    <!-- No third-party services are called, so the control is not premium. -->
+    <external-service-usage enabled="false">
+    </external-service-usage>
+
+    <!-- The date and time column the SLA is measured against. -->
+    <property name="dueDate" display-name-key="dueDate_Display_Key" description-key="dueDate_Desc_Key" of-type="DateAndTime.DateAndTime" usage="bound" required="true" />
+
+    <!-- Hours remaining at or below which the badge turns amber. -->
+    <property name="warningHours" display-name-key="warningHours_Display_Key" description-key="warningHours_Desc_Key" of-type="Whole.None" usage="input" required="false" default-value="24" />
+
+    <!-- Hours remaining at or below which the badge turns red. -->
+    <property name="criticalHours" display-name-key="criticalHours_Display_Key" description-key="criticalHours_Desc_Key" of-type="Whole.None" usage="input" required="false" default-value="4" />
+
+    <!-- Optional text shown before the countdown, for example "Approval SLA". -->
+    <property name="label" display-name-key="label_Display_Key" description-key="label_Desc_Key" of-type="SingleLine.Text" usage="input" required="false" />
+
+    <resources>
+      <code path="index.ts" order="1" />
+      <css path="css/SlaCountdown.css" order="1" />
+      <resx path="strings/SlaCountdown.1033.resx" version="1.0.0" />
+    </resources>
+  </control>
+</manifest>

@@ -1,0 +1,30 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+
+# generated directory
+# ManifestTypes.d.ts is regenerated from ControlManifest.Input.xml on every build.
+# It is committed on purpose so the repo type-checks and reads clearly before a first build.
+
+# output directory
+/out
+
+# msbuild output directories
+/bin
+/obj
+
+# MSBuild Binary and Structured Log
+*.binlog
+
+# Visual Studio cache/options directory
+/.vs
+
+# Power Platform CLI on macOS can write its user settings to a literal "~" folder in the build directory
+/~/
+
+# test coverage
+/coverage
+
+# macos
+.DS_Store
