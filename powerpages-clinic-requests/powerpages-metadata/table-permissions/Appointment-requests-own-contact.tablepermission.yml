@@ -1,0 +1,13 @@
+adx_entitypermission_webrole:
+- __AUTHENTICATED_USERS_ROLE_ID__
+append: true
+appendto: false
+contactrelationship: __CONTACT_RELATIONSHIP__
+create: true
+delete: false
+entitylogicalname: cr_appointmentrequest
+entityname: Appointment requests own contact
+id: 068018e5-a623-475e-8156-5b1fae7383bc
+read: true
+scope: 756150001
+write: false

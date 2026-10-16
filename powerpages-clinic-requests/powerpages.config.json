@@ -1,0 +1,11 @@
+{
+  "$schema": "https://www.schemastore.org/powerpages.config.json",
+  "siteName": "Contoso Clinic Requests",
+  "compiledPath": "dist",
+  "defaultLandingPage": "index.html",
+  "bundleFilePatterns": [
+    "index-*.js",
+    "index-*.css"
+  ],
+  "includeSource": false
+}

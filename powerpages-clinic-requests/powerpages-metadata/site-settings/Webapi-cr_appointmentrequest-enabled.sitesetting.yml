@@ -1,0 +1,4 @@
+description: Turns on the Power Pages Web API for appointment requests
+id: 344c81f5-a7ec-48ca-9d33-a40762ee574a
+name: Webapi/cr_appointmentrequest/enabled
+value: true

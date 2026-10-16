@@ -1,0 +1,4 @@
+description: Columns the Web API may read or write on appointment requests. No wildcard.
+id: d5308d44-a268-4da0-a710-e4c039b69741
+name: Webapi/cr_appointmentrequest/fields
+value: "_cr_contact_value,cr_appointmentrequestid,cr_consenttimestamp,cr_consentversion,cr_Contact,cr_email,cr_name,cr_phone,cr_popiaconsent,cr_preferreddate,cr_reason,cr_status,cr_timewindow,createdon"

@@ -1,0 +1,12 @@
+adx_entitypermission_webrole:
+- __AUTHENTICATED_USERS_ROLE_ID__
+append: false
+appendto: true
+create: false
+delete: false
+entitylogicalname: contact
+entityname: Contact self append to
+id: fbfba9c1-c482-4f5a-858a-e8040baa731a
+read: true
+scope: 756150004
+write: false

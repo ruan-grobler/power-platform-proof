@@ -1,0 +1,12 @@
+adx_entitypermission_webrole:
+- __ANONYMOUS_USERS_ROLE_ID__
+append: false
+appendto: false
+create: true
+delete: false
+entitylogicalname: cr_appointmentrequest
+entityname: Appointment requests anonymous create
+id: ab34c482-f65c-4a92-8a2f-922fec5ea1b1
+read: false
+scope: 756150000
+write: false

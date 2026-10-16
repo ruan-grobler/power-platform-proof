@@ -1,0 +1,17 @@
+# Dependencies and build output
+node_modules/
+dist/
+coverage/
+*.tsbuildinfo
+
+# Local environment files
+.env.local
+.env.*.local
+
+# OS and editor noise
+.DS_Store
+*.log
+
+# Note: .powerpages-site/ is created by the first `pac pages upload-code-site`.
+# Commit it once it exists: it holds the site settings, web roles and table
+# permissions that later uploads keep in sync.
