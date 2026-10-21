@@ -79,6 +79,14 @@ pcf-sla-countdown/
 
 All of the decision making lives in `src/sla.ts`. The control in `SlaCountdown/index.ts` only reads the PCF context, calls `computeSla()`, and paints the result. That split keeps the rules testable in plain Node and keeps the control thin.
 
+```mermaid
+flowchart LR
+  M["ControlManifest.Input.xml<br/>dueDate and thresholds"] --> I["index.ts<br/>updateView, 60 s timer"]
+  I --> S["src/sla.ts computeSla()<br/>pure, unit tested"]
+  S --> D["Badge<br/>role=status, aria-live"]
+  I -. "dotnet build" .-> Z["Solution zip<br/>managed or unmanaged"]
+```
+
 ## Run it locally
 
 You need Node.js (an LTS release: 20, 22 or 24) and npm.
