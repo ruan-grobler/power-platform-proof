@@ -1,0 +1,96 @@
+$ (cd pcf-sla-countdown && npm run lint)
+
+> pcf-sla-countdown@1.0.0 lint
+> pcf-scripts lint && eslint src test
+
+[9:43:20 PM] [lint] Initializing...
+[9:43:20 PM] [lint] Running ESLint...
+[9:43:21 PM] [lint] Succeeded
+exit code 0
+
+$ (cd pcf-sla-countdown && npm run typecheck)
+
+> pcf-sla-countdown@1.0.0 typecheck
+> tsc --noEmit -p tsconfig.json && tsc --noEmit -p test/tsconfig.json
+
+exit code 0
+
+$ (cd pcf-sla-countdown && npm run test)
+
+> pcf-sla-countdown@1.0.0 test
+> vitest run
+
+
+ RUN  v4.1.11 ~/Code/power-platform-proof/pcf-sla-countdown
+
+
+ Test Files  2 passed (2)
+      Tests  57 passed (57)
+   Start at  21:43:28
+   Duration  383ms (transform 46ms, setup 0ms, import 66ms, tests 17ms, environment 255ms)
+
+exit code 0
+
+$ (cd pcf-sla-countdown && npm run build)
+
+> pcf-sla-countdown@1.0.0 build
+> pcf-scripts build
+
+[9:43:29 PM] [build] Initializing...
+[9:43:29 PM] [build] Validating manifest...
+[9:43:29 PM] [build] Validating control...
+[9:43:30 PM] [build] Generating manifest types...
+[9:43:30 PM] [build] Generating design types...
+[9:43:30 PM] [build] Running ESLint...
+[9:43:31 PM] [build] Compiling and bundling control...
+[Webpack stats]:
+asset bundle.js 16.8 KiB [emitted] (name: main)
+runtime modules 614 bytes 3 modules
+cacheable modules 11.1 KiB
+  ./SlaCountdown/index.ts 6.01 KiB [built] [code generated]
+  ./src/sla.ts 5.05 KiB [built] [code generated]
+webpack 5.112.0 compiled successfully in 1010 ms
+[9:43:32 PM] [build] Generating build outputs...
+[9:43:32 PM] [build] Succeeded
+exit code 0
+
+$ (cd powerpages-clinic-requests && npm run typecheck)
+
+> powerpages-clinic-requests@0.1.0 typecheck
+> tsc -b
+
+exit code 0
+
+$ (cd powerpages-clinic-requests && npm run test)
+
+> powerpages-clinic-requests@0.1.0 test
+> vitest run
+
+
+ RUN  v5.0.5 ~/Code/power-platform-proof/powerpages-clinic-requests
+
+
+ Test Files  4 passed (4)
+      Tests  57 passed (57)
+   Start at  21:43:35
+   Duration  226ms (tests 37%, transform 31%, import 27%, worker 6%)
+
+exit code 0
+
+$ (cd powerpages-clinic-requests && npm run build)
+
+> powerpages-clinic-requests@0.1.0 build
+> tsc -b && vite build
+
+vite v8.3.4 building client environment for production...
+transforming...
+✓ 36 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                   0.77 kB │ gzip:  0.42 kB
+dist/assets/index-DM8cjmal.css   13.06 kB │ gzip:  3.66 kB
+dist/assets/index-DOvxea2U.js   254.86 kB │ gzip: 80.12 kB
+
+✓ built in 126ms
+exit code 0
+

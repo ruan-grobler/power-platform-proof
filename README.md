@@ -1,8 +1,30 @@
 # Power Platform proof projects
 
-![Tests](https://img.shields.io/badge/tests-114%20passing-2EA043?style=flat-square) ![TypeScript](https://img.shields.io/badge/TypeScript-strict-3178C6?style=flat-square&logo=typescript&logoColor=white) ![Power Apps PCF](https://img.shields.io/badge/Power%20Apps-PCF%20control-742774?style=flat-square) ![Power Pages](https://img.shields.io/badge/Power%20Pages-code%20site-5C2D91?style=flat-square) ![Dataverse](https://img.shields.io/badge/Dataverse-Web%20API-107C10?style=flat-square) ![Vitest](https://img.shields.io/badge/Vitest-tested-6E9F18?style=flat-square&logo=vitest&logoColor=white)
+A PCF control that turns a due date into a live SLA countdown on a model driven form, and a Power Pages site where clinic patients request an appointment with POPIA consent. Both are pro-code Power Platform builds in strict TypeScript.
 
-Two small, tested builds that show pro-code work alongside Microsoft Power Platform:
+![Tests](https://img.shields.io/badge/tests-114%20passing-2EA043?style=flat-square) ![TypeScript](https://img.shields.io/badge/TypeScript-strict-3178C6?style=flat-square&logo=typescript&logoColor=white) ![Power Apps PCF](https://img.shields.io/badge/Power%20Apps-PCF%20control-742774?style=flat-square) ![Power Pages](https://img.shields.io/badge/Power%20Pages-code%20site-5C2D91?style=flat-square) ![Dataverse](https://img.shields.io/badge/Dataverse-Web%20API-107C10?style=flat-square) ![Vitest](https://img.shields.io/badge/Vitest-tested-6E9F18?style=flat-square&logo=vitest&logoColor=white) [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](LICENSE)
+
+**The result.** 114 automated tests pass (57 per project), both projects typecheck clean, and both production builds succeed. From a fresh run on 21 October 2026, saved in [docs/test-output.txt](docs/test-output.txt).
+
+![Terminal output for both projects. pcf-sla-countdown: lint succeeded, typecheck exit code 0, 57 of 57 tests passed, build compiled successfully with bundle.js 16.8 KiB. powerpages-clinic-requests: typecheck exit code 0, 57 of 57 tests passed, Vite build with JS 254.86 kB, 80.12 kB gzip.](docs/images/test-run.svg)
+
+<sub>An excerpt of [docs/test-output.txt](docs/test-output.txt): the command and result lines of each step, with the npm banners cut.</sub>
+
+## Run them locally
+
+```
+cd pcf-sla-countdown && npm install && npm start
+```
+
+Opens the PCF test harness at http://localhost:8181.
+
+```
+cd powerpages-clinic-requests && npm install && npm run dev
+```
+
+Opens the site with mock data at http://localhost:5180.
+
+## The two projects
 
 | Project | What it is | Stack |
 |---|---|---|
@@ -69,19 +91,5 @@ Where the tests sit:
 | `powerpages-clinic-requests/src/api/powerPagesRequests.test.ts` | 9 |
 
 Every badge colour pair in the PCF control passes WCAG AA, with contrast between 6.15:1 and 11.53:1 (table in [pcf-sla-countdown](pcf-sla-countdown/README.md#states)). On the Power Pages site no web role has Write or Delete, and the Web API fields setting lists every column explicitly.
-
-## Run them locally
-
-```
-cd pcf-sla-countdown && npm install && npm start
-```
-
-Opens the PCF test harness at http://localhost:8181.
-
-```
-cd powerpages-clinic-requests && npm install && npm run dev
-```
-
-Opens the site with mock data at http://localhost:5180.
 
 Built by Ruan Grobler, Microsoft Certified: Power Platform Fundamentals.
